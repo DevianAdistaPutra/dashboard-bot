@@ -1,0 +1,22 @@
+{
+ "name": "dashboardbot",
+ "version": "1.0.0",
+ "description": "Dashboard Bot, Public Access..",
+ "scripts": {
+   "start": "node index.js"
+ },
+ "dependencies": {
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "passport": "*",
+    "passport-discord": "*"
+    "quick.db": "7.0.0-b22",
+    "discord.js": "12.1.1"
+ },
+ "license": "MIT",
+ "author": "Server Development",
+ "engine": {
+  "node": "12.x"
+ }
+}
