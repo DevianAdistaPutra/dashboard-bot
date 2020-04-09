@@ -46,8 +46,8 @@ if (msg.author.bot) return;
 if (msg.channel.type === 'dm') return;
 
 try {
-let commandFile = require(`./commands/${cmd}.js`);
-commandFile.run(bot, msg, args);
+let commandFile = require(`./commands/${cmd}Command.js`);
+commandFile.exec(bot, msg, args);
 } catch(e) {
 console.log(e.message);
 } finally {
