@@ -51,7 +51,11 @@ res.redirect('/');
 });
 
 app.get('/', (req, res) => {
-res.sendStatus(200);
+let usr;
+if (!req.user) usr = { username: 'Anonymous' };
+else usr = usr;
+
+res.send(`You logged in as: <b>${usr.username}</b>`);
 });
 
 app.listen(27045);
