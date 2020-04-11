@@ -28,6 +28,18 @@ return done(null, profile);
 });
 }));
 
+/* Sesi */
+passport.use(session({
+secret:'hansputera',
+resave: false,
+saveUninitialized: false
+}));
+
+app.use(passport.session());
+app.use(passport.initialize());
+
+
+
 app.get('/', (req, res) => {
 res.sendStatus(200);
 });
