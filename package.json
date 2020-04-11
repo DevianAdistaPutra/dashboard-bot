@@ -12,7 +12,8 @@
     "passport": "*",
     "passport-discord": "*",
     "quick.db": "7.0.0-b22",
-    "discord.js": "12.1.1"
+    "discord.js": "12.1.1",
+    "dotenv": "*"
  },
  "license": "MIT",
  "author": "Server Development",
