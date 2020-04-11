@@ -50,6 +50,8 @@ console.log(`[LOGIN] ${req.user.username}#${req.user.discriminator} telah login!
 res.redirect('/');
 });
 
+app.use('/settings/autonick', require('./router/autonick.js'));
+
 app.get('/', (req, res) => {
 let usr;
 if (!req.user) usr = { username: 'Anonymous' };
