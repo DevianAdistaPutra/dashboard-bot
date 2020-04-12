@@ -1,6 +1,14 @@
 <html>
 <head>
 <title> <%= req.user.username %> Edit <%= guild.name %></title>
-
+<link rel="stylesheet" href="autonick.css">
+<script src="autonick.min.js"></script>
 </head>
+<body>
+<form action=/autonick method=post>
+<label for="nick"> Nick: </label>
+<input type="text" id="nick" name="nick" placeholder="Example: FP•">
+<button type="submit"> Submit </button>
+</form>
+</body>
 </html>
